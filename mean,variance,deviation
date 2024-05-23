@@ -1,0 +1,18 @@
+import math
+def main():
+    numbers = []
+    n = int(input("Enter the number of elements: "))
+    print("Enter", n, "numbers:")
+    for i in range(n):
+        num = float(input())
+        numbers.append(num)
+    mean = sum(numbers) / n
+    deviation = sum((x - mean) ** 2 for x in numbers) / n
+    variance = math.sqrt(deviation)
+    
+    print("Mean =", round(mean, 2))
+    print("Standard Deviation =", round(deviation, 2))
+    print("Variance =", round(variance, 2))
+
+if __name__ == "__main__":
+    main()
