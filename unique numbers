@@ -1,0 +1,15 @@
+def remove_duplicates(arr):
+    unique_values = []
+    for num in arr:
+        if num not in unique_values:
+            unique_values.append(num)
+    return unique_values
+
+if _name_ == "_main_":
+    size = int(input("Enter the array size: "))
+    print("Input", size, "elements in the array:", end=" ")
+    array = list(map(int, input().split()))
+
+    unique_elements = remove_duplicates(array)
+    print("The unique elements found in the array are:")
+    print(*unique_elements)
