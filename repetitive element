@@ -1,0 +1,12 @@
+def find_repetitive_element(arr):
+    n = len(arr)
+    expected_sum = n * (n - 1) 
+    actual_sum = sum(arr)
+    repetitive_element = actual_sum - expected_sum
+    return repetitive_element
+print("Enter the elements of the array separated by spaces:")
+arr = list(map(int, input().split()))
+
+repetitive_element = find_repetitive_element(arr)
+
+print("Repetitive element in the array is:", repetitive_element)
