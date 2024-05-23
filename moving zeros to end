@@ -1,0 +1,10 @@
+arr = list(map(int, input("Enter the array of numbers: ").split()))
+non_zero_index = 0
+for num in arr:
+    if num != 0:
+        arr[non_zero_index] = num
+        non_zero_index += 1
+for i in range(non_zero_index, len(arr)):
+    arr[i] = 0
+print("Array after moving zeros to the end while maintaining order of other elements:")
+print(arr)
