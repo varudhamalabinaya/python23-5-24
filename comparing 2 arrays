@@ -1,0 +1,10 @@
+arr1 = [11, 12, 13, 14, 15]  
+arr2 = [12, 13, 11, 15, 14]  
+  
+a = set(arr1)  
+b = set(arr2)  
+  
+if a == b:  
+    print("The array1 and array2 are equal")  
+else:  
+    print("The array1 and array2 are not equal")  
